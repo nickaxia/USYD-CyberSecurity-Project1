@@ -1,0 +1,45 @@
+**** Move files as required ****
+mv 0310_win_loss_player_data 0312_win_loss_player_data 0315_win_loss_player_data ../Roulette_Loss_Investigation/Player_Analysis/
+
+
+grep -i '05:00:00 AM\|08:00:00 AM\|02:00:00 PM\|08:00:00 PM\|11:00:00 PM' 0310_win_loss_player_data > Roulette_Losses     ****Used grep commamd to move times with losses to Routette_Lossess****
+grep -i '05:00:00 AM\|08:00:00 AM\|02:00:00 PM\|08:00:00 PM\|11:00:00 PM' 0312_win_loss_player_data >> Roulette_Losses
+grep -i '05:00:00 AM\|08:00:00 AM\|02:00:00 PM' 0315_win_loss_player_data >> Roulette_Losses
+
+
+Resultant
+
+
+
+05:00:00 AM	-$82,348	Amirah Schneider,Nola Portillo, Mylie Schmidt,Suhayb Maguire,Millicent Betts,Avi Graves
+08:00:00 AM	-$97,383	Chanelle Tapia, Shelley Dodson , Valentino Smith, Mylie Schmidt
+02:00:00 PM	-$82,348	Jaden Clarkson, Kaidan Sheridan, Mylie Schmidt 
+08:00:00 PM	-$65,348        Mylie Schmidt, Trixie Velasquez, Jerome Klein ,Rahma Buckley
+11:00:00 PM	-$88,383	Mcfadden Wasim, Norman Cooper, Mylie Schmidt
+05:00:00 AM	-$182,300	Montana Kirk, Alysia Goodman, Halima Little, Etienne Brady, Mylie Schmidt
+08:00:00 AM	-$97,383        Rimsha Gardiner,Fern Cleveland, Mylie Schmidt,Kobe Higgins	
+02:00:00 PM	-$82,348        Mae Hail,  Mylie Schmidt,Ayden Beil	
+08:00:00 PM	-$65,792        Tallulah Rawlings,Josie Dawe, Mylie Schmidt,Hakim Stott, Esther Callaghan, Ciaron Villanueva	
+11:00:00 PM	-$88,229        Vlad Hatfield,Kerys Frazier,Mya Butler, Mylie Schmidt,Lex Oakley,Elin Wormald	
+05:00:00 AM	-$82,844        Arjan Guzman,Sommer Mann, Mylie Schmidt	
+08:00:00 AM	-$97,001        Lilianna Devlin,Brendan Lester, Mylie Schmidt,Blade Robertson,Derrick Schroeder	
+02:00:00 PM	-$182,419        Mylie Schmidt, Corey Huffman
+
+grep -i 'Mylie Schmidt' Roulette_Losses | wc -l
+
+****Resultant  Mylie Schmidt occurred 13 times and each hour where loss occured**** 
+
+Date	Time	Losses	Player
+0310	05:00am $82,348	Mylie Schmidt
+0310	08:00am	$97,383	Mylie Schmidt
+0310	02:00pm $82,348	Mylie Schmidt
+0310	08:00pm	$65,348	Mylie Schmidt
+0310	11:00pm	$88,383	Mylie Schmidt
+0312	05:00am	$182300	Mylie Schmidt
+0312	08:00am	$97,383	Mylie Schmidt
+0312	02:00pm	$82,348	Mylie Schmidt
+0312	08:00pm	$65,792	Mylie Schmidt
+0312	11:00pm	$88,229	Mylie Schmidt
+0315	05:00am	$82,844	Mylie Schmidt
+0315	08:00am	$97,001	Mylie Schmidt
+0315	02:00pm	$182419	Mylie Schmidt	
