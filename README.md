@@ -68,28 +68,49 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the **_Jump-Box Provisioner_** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+**_My Remote Desktop via my Public IP connecting to the Jump-Box Public IP: 20.213.156.62 via port22 SSH connection_**.
+ 
+Machines within the network can only be accessed by via **_SSH Jump-Box_**
+
+- Which machine did you allow to access your ELK VM? 
+
+**_The Jump-Box Provisioner_**
+
+- What was its IP address?_
+
+**_IP: 10.1.0.5 via SSH port 22_**
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes	                | 20.213.156.62:22(SSH)|
+| Web1     | Yes (Load Balancer) | 20.213.81.187:22(SSH)|
+| Web2     | Yes (Load Balancer) | 20.213.81.187:22(SSH)|                  
+| ELK      | Yes (Kibana)        | 20.106.88.230:5601   |
 
-### Elk Configuration
+
+
+## Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+
+- What is the main advantage of automating configuration with Ansible?
+
+**_The advantages of Ansible lets you quickly and easily deploy multitier applications through a YAML playbook. don't need to write custom code to automate your systems. Ansible will also figure out how to get your systems to the state you want them to be in_**.
+
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+
+In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
+
+- ... ** Installs first task docker.io ** 
+- ... ** Install 2nd task python3-pip3 **
+- ... ** Install 3rd task Docker module **
+- ... ** Increase virtual memory **
+- ... ** Download and launch a docker ELK container **
+ 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
