@@ -201,7 +201,7 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 |`sudo lsof /var/lib/dpkg/lock-frontend`           | unlocking a locked file                               |
 |`ssh ansible@Web-1 IP address`                    |  to log into the Web-1 VM                             |
 |`ssh ansible@Web-2 IP address`                    |  to log into the Web-2 VM                             |
-|
+
 |`ssh ansible@ELKserver IP address`                |  to log into the ELKserver VM                         |
 |`exit`                                            | to exit out of docker containers/Jump-Box-Provisioners|
 |`nano /etc/ansible/ansible.cfg`                   |  to edit the ansible.cfg file                         |
