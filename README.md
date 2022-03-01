@@ -148,17 +148,17 @@ SSH into the control node and follow the steps below:
 
 Answer the following questions to fill in the blanks:_
 
-- Which file is the playbook? 
+Which file is the playbook? 
 
 - [ELK installation file]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Ansible/ELK_Stack/elk-playbook.yml)
 
-- Where do you copy it?
+Where do you copy it?
 
 **_Copied into root@a062c34c9d59:/etc/ansible#_**
 - [Elk Yaml file location]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Diagrams/Images/Capture_ELK_location_file.PNG)
 
 
-- _Which file do you update to make Ansible run the playbook on a specific machine? 
+Which file do you update to make Ansible run the playbook on a specific machine? 
 
 **_Updating the /etc/amsible/hosts_**
 - [Host_File]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Ansible/ELK_Stack/hosts.txt)
@@ -167,8 +167,19 @@ Answer the following questions to fill in the blanks:_
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 
 **_For the ELK server editing the Host file with new group name called “ELK” add the IP address of the ELK virtual machine and its python link ansible_python_interpreter=/usr/bin/python3_**
+**_For the Filebeat edit etc/ansible/filebeat-config.yml and scroll to line #1106 and #1806, replace the IP address with the IP address of the ELK machine.-
+**
+
+LINE 1106
+![alt text]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Diagrams/Images/Capture_FilbeatConfig_line1106.PNG)
+
+LINE 1806
+![alt text]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Diagrams/Images/Capture_FilbeatConfig_line1186.PNG)
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
+
+https://20.106.88.230:5601/app/kibana
+
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
