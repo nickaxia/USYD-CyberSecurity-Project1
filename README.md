@@ -37,21 +37,31 @@ Load balancing ensures that the application will be highly **_functional and ava
 
 **_Load balancers add resiliency by rerouting live traffic from one server to another if a server falls prey to a DDoS attack or otherwise becomes unavailable_**
 
-- What is the advantage of a jump box?_
+- What is the advantage of a jump box?
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+**_A Jump Box Provisioner is also important as it prevents Azure VMs from being exposed via a public IP Address. This allows us to do monitoring and logging on a single box. We can also restrict the IP addresses able to communicate with the Jump Box_**
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the **_network_** and **_system logs_**.
+
+- What does Filebeat watch for?
+
+**_Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing._**
+
+
+- What does Metricbeat record?
+
+**_Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash_**
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+ 
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Jump Box | Gateway  | 10.0.0.4   | Linux  (Ubuntu)  |
+| Web1     | DVWA     | 10.0.0.5   | Linux  (Ubuntu)  |
+| Web2     | DVWA     | 10.0.0.6   | Linux  (Ubuntu)  |
+| ELK      | Server   | 10.1.0.5   | Linux  (Ubuntu)  |
+
 
 ### Access Policies
 
