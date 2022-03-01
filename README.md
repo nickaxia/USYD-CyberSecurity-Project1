@@ -150,13 +150,23 @@ Answer the following questions to fill in the blanks:_
 
 - Which file is the playbook? 
 
-[ELK installation file}( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Ansible/ELK_Stack/elk-playbook.yml)
+[ELK installation file]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Ansible/ELK_Stack/elk-playbook.yml)
 
 - Where do you copy it?
 
+**_Copied into root@a062c34c9d59:/etc/ansible#_**
+[Elk Yaml file location]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Diagrams/Images/Capture_ELK_location_file.PNG)
 
 
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- _Which file do you update to make Ansible run the playbook on a specific machine? 
+
+**_Updating the /etc/amsible/hosts_**
+[Host_File]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Ansible/ELK_Stack/hosts.txt)
+
+
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+
+**_For the ELK server editing the Host file with new group name called “ELK” add the IP address of the ELK virtual machine and its python link ansible_python_interpreter=/usr/bin/python3_**
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
