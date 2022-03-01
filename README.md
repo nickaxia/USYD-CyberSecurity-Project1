@@ -201,7 +201,7 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 |`sudo lsof /var/lib/dpkg/lock-frontend`           | unlocking a locked file                               |
 |`ssh ansible@Web-1 IP address`                    |  to log into the Web-1 VM                             |
 |`ssh ansible@Web-2 IP address`                    |  to log into the Web-2 VM                             |
-
+|`ssh ansible@DVWA-VM3 IP address`                 |  to log into the DVWA-VM3 VM                          |
 |`ssh ansible@ELKserver IP address`                |  to log into the ELKserver VM                         |
 |`exit`                                            | to exit out of docker containers/Jump-Box-Provisioners|
 |`nano /etc/ansible/ansible.cfg`                   |  to edit the ansible.cfg file                         |
@@ -218,11 +218,10 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 |`ansible -m ping all`                             |  check the connection of ansible containers           |
 |`curl -L -O [location of the file on the web]`    |  to download a file from the web                      |
 |`dpkg -i [filename]`                              |  to install the file i.e. (filebeat & metricbeat)     |
-|`http://ELK.VM.External.IP:5601//app/kibana`           | Open web browser and navigate to Kibana Logs          |
+|`http://<ELK.VM.External.IP>:5601//app/kibana`           | Open web browser and navigate to Kibana Logs          |
 |`nano filebeat-config.yml`                        | create and edit filebeat config file                  |
 |`nano filebeat-playbook.yml`                      | write YAML file to install filebeat on webservers     |
 |`nano metricbeat-config.yml`                      | create metricbeat config file and edit it             |
 |`nano metricbeat-playbook.yml`                    | write YAML file to install metricbeat on webservers   |  
 ------------------------------------------------------------------------------------------------------------
-
 
