@@ -106,12 +106,7 @@ The playbook implements the following tasks:
 In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 
 - **Installs first task docker.io**
-
-    
-        
 - **Install 2nd task python3-pip3**
-
-
 - **Install 3rd task Docker module**
 - **Increase virtual memory**
 - **Download and launch a docker ELK container**
@@ -119,7 +114,7 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+[Update the path with the name of your screenshot of docker ps output]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Diagrams/Images/Capture_ELK_Docker%20PS.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -145,6 +140,7 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
 
 
 
