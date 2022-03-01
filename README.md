@@ -106,14 +106,17 @@ The playbook implements the following tasks:
 In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 
 - **Installs first task docker.io**
-# Use apt module
+
     - name: Install docker.io
       apt:
         update_cache: yes
         force_apt_get: yes
         name: docker.io
         state: present 
+        
 - **Install 2nd task python3-pip3**
+
+
 - **Install 3rd task Docker module**
 - **Increase virtual memory**
 - **Download and launch a docker ELK container**
