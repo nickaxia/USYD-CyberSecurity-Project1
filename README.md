@@ -107,12 +107,7 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 
 - **Installs first task docker.io**
 
-    - name: Install docker.io
-      apt:
-        update_cache: yes
-        force_apt_get: yes
-        name: docker.io
-        state: present 
+    
         
 - **Install 2nd task python3-pip3**
 
