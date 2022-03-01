@@ -5,7 +5,7 @@ Homework: GitHub Fundamentals and Project1  (Week-13 ELK Stack Submission)
 
 The files in this repository were used to configure the network depicted below.
 
-(USYD-CyberSecurity-Project1/Diagrams/Project1-ELK_Stack_Diagram.png)
+(https://github.com/nickaxia/USYD-CyberSecurity-Project1/Diagrams/Project1-ELK_Stack_Diagram.png)
 
 
 
