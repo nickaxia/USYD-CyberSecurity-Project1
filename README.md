@@ -114,27 +114,40 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-[Update the path with the name of your screenshot of docker ps output]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Diagrams/Images/Capture_ELK_Docker%20PS.PNG)
+![alt text]( https://github.com/nickaxia/USYD-CyberSecurity-Project1/blob/main/Diagrams/Images/Capture_ELK_Docker%20PS.PNG)
 
-### Target Machines & Beats
+## Target Machines & Beats
+
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+
+- List the IP addresses of the machines you are monitoring
+
+**_Web1 10.0.0.5_**
+**_Web2 10.0.0.6_**
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+
+- Specify which Beats you successfully installed
+
+**_FileBeat_**
+**_MetricBeat_**
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
 
-### Using the Playbook
+**_ The Beats allow us to collect the following information and data from each machine: -Filebeat system log management and collecting data like Sudo commands, SSH logins, and new users and groups -Metricbeat is used to monitor VM stats per CPU core, filesystem stats, memory stats and network stats. Monitoring the DWVA services it tracks CPU usage, Memory, and Number of Containers._**
+
+## Using the Playbook
+
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the **_yml_** file to **_/etc/ansible folder_**.
+- Update the **_config_** file to include **_remote users and ports_**
+- Run the playbook, and navigate to **_Kibana (http://[your.ELK-VM.External.IP]:5601/app/kibana)_** to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+Answer the following questions to fill in the blanks:_
+
 - _Which file is the playbook? Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
