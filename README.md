@@ -35,7 +35,7 @@ Load balancing ensures that the application will be highly **_functional and ava
 
 - What aspect of security do load balancers protect? 
 
-**_ Load balancers add resiliency by rerouting live traffic from one server to another if a server falls prey to a DDoS attack or otherwise becomes unavailable_**
+**_Load balancers add resiliency by rerouting live traffic from one server to another if a server falls prey to a DDoS attack or otherwise becomes unavailable_**
 
 - What is the advantage of a jump box?_
 
